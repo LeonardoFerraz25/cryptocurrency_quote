@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  transition: all 0.5s;
 }
 
 header {
@@ -16,15 +17,33 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  border: 1px solid;
   height: 80vh;
 
 }
 
 .moedas { 
   background-color: lightgrey;
-  width: 30rem;
-  padding: 1rem 2rem;
+  width: 18rem;
+  padding: 1rem 3rem;
+  box-shadow: 2px 2px 5px #242424;
+}
+.moedas h2 {
+  font-family: sans-serif;
+}
+.moedas li {
+  margin: 0.5rem;
+  border-bottom: 1px solid grey;
+  padding: 0.2rem;
+  font-family: monospace;
+  font-size: 15px;
+}
+
+.moedas li:hover {
+  background-color: darkgrey;
+}
+
+.moedas span {
+  color: blue;
 }
 
 footer {
@@ -38,10 +57,9 @@ footer {
 }
 
 footer a {
-  color: lightskyblue;
+  color: lightgrey;
 }
 
 footer a:hover {
   color: blue;
-
 }
